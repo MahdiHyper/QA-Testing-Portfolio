@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-22T19:46:26 EET" name="Default suite" finished-at="2025-12-22T19:46:29 EET" duration-ms="2797">
+    <groups>
+    </groups>
+    <test started-at="2025-12-22T19:46:26 EET" name="Default test" finished-at="2025-12-22T19:46:29 EET" duration-ms="2797">
+      <class name="Test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:26 EET" name="setup" finished-at="2025-12-22T19:46:28 EET" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:28 EET" name="beforeEveryTest" finished-at="2025-12-22T19:46:28 EET" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="testSuccessfulLogin()[pri:1, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:28 EET" name="testSuccessfulLogin" finished-at="2025-12-22T19:46:28 EET" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:28 EET" name="beforeEveryTest" finished-at="2025-12-22T19:46:29 EET" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="testLoginWithWrongPassword()[pri:2, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="testLoginWithWrongPassword" finished-at="2025-12-22T19:46:29 EET" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongPassword -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="beforeEveryTest" finished-at="2025-12-22T19:46:29 EET" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="testLoginWithEmptyUsername()[pri:3, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="testLoginWithEmptyUsername" finished-at="2025-12-22T19:46:29 EET" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyUsername -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="beforeEveryTest" finished-at="2025-12-22T19:46:29 EET" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="testLoginWithEmptyPassword()[pri:4, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="testLoginWithEmptyPassword" finished-at="2025-12-22T19:46:29 EET" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LoginTest@1f2586d6]" started-at="2025-12-22T19:46:29 EET" name="tearDown" finished-at="2025-12-22T19:46:29 EET" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
