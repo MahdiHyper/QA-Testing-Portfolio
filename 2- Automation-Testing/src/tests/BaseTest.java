@@ -23,7 +23,7 @@ public class BaseTest {
         BasePage.setDriver(driver);
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         driver.get(URL);
         driver.manage().deleteAllCookies();
         
