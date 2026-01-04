@@ -4,8 +4,10 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import utils.ScreenshotUtil;
 
 import pages.BasePage;
 import pages.LoginPage;
@@ -31,7 +33,12 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(ITestResult result) {
+    	
+    	if (result.getStatus() == ITestResult.FAILURE) {
+            String testName = result.getName();
+            ScreenshotUtil.takeScreenshot(driver, testName);
+        }
     	
         if (driver != null) {
             driver.quit();

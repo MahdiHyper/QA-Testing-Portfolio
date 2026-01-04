@@ -1,5 +1,6 @@
 package tests;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
 import pages.ProductPage;
@@ -53,6 +54,27 @@ public class LoginTest extends BaseTest {
         String errorMessage = loginPage.getErrorMessage();
         assertTrue(errorMessage.contains("locked out"), 
             "Error message must contain 'locked out'");
+    }
+    
+    @Test(priority = 6)
+    public void testIntentionalFailure_WrongAssertion() {
+    	
+        loginPage.login("standard_user", "secret_sauce");
+        
+        //خطأ عمداً عشان يوخذ سكرين
+        assertTrue(false, "This test is designed to fail for screenshot demo");
+    }
+
+    @Test(priority = 7)
+    public void testIntentionalFailure_WrongExpectedValue() {
+    	
+        ProductPage productPage = loginPage.login("standard_user", "secret_sauce");
+        
+        String productName = productPage.getProductNameByIndex(0);
+        
+        //خطأ عمداً عشاان يوخذ سكرين
+        assertEquals(productName, "Wrong Product Name", 
+            "This test is designed to fail for screenshot demo");
     }
 
 

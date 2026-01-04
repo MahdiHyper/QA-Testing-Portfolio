@@ -1,2 +1,28 @@
-/bin/
-/target/
+*.class
+target/
+bin/
+
+# Log files
+*.log
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# TestNG
+test-output/
+
+# OS Files
+.DS_Store
+Thumbs.db

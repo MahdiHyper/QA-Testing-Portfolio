@@ -1,93 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-04T20:48:51 EET" name="Default suite" finished-at="2026-01-04T20:49:05 EET" duration-ms="14044">
+  <suite started-at="2026-01-04T21:02:41 EET" name="Default suite" finished-at="2026-01-04T21:02:54 EET" duration-ms="13261">
     <groups>
     </groups>
-    <test started-at="2026-01-04T20:48:51 EET" name="Default test" finished-at="2026-01-04T20:49:05 EET" duration-ms="14044">
-      <class name="tests.CartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:51 EET" name="setUp" finished-at="2026-01-04T20:48:53 EET" duration-ms="1819" status="PASS">
+    <test started-at="2026-01-04T21:02:41 EET" name="Default test" finished-at="2026-01-04T21:02:54 EET" duration-ms="13261">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:41 EET" name="setUp" finished-at="2026-01-04T21:02:43 EET" duration-ms="1942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCartPage()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:53 EET" name="setUpCartPage" finished-at="2026-01-04T20:48:53 EET" duration-ms="279" status="PASS">
+        <test-method signature="testSuccessLogin()[pri:1, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:43 EET" name="testSuccessLogin" finished-at="2026-01-04T21:02:43 EET" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpCartPage -->
-        <test-method signature="testIsCartPageTitleDisplayed()[pri:1, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:53 EET" name="testIsCartPageTitleDisplayed" finished-at="2026-01-04T20:48:54 EET" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIsCartPageTitleDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:54 EET" name="tearDown" finished-at="2026-01-04T20:48:54 EET" duration-ms="113" status="PASS">
+        </test-method> <!-- testSuccessLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:43 EET" name="tearDown" finished-at="2026-01-04T21:02:43 EET" duration-ms="106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessLogin status=SUCCESS method=LoginTest.testSuccessLogin()[pri:1, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:54 EET" name="setUp" finished-at="2026-01-04T20:48:55 EET" duration-ms="1356" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:43 EET" name="setUp" finished-at="2026-01-04T21:02:45 EET" duration-ms="1367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCartPage()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:55 EET" name="setUpCartPage" finished-at="2026-01-04T20:48:55 EET" duration-ms="304" status="PASS">
+        <test-method signature="testEmptyUsername()[pri:2, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:45 EET" name="testEmptyUsername" finished-at="2026-01-04T21:02:45 EET" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpCartPage -->
-        <test-method signature="testEmptyCartHasNoProducts()[pri:2, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:55 EET" name="testEmptyCartHasNoProducts" finished-at="2026-01-04T20:48:57 EET" duration-ms="2040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyCartHasNoProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:57 EET" name="tearDown" finished-at="2026-01-04T20:48:57 EET" duration-ms="152" status="PASS">
+        </test-method> <!-- testEmptyUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:45 EET" name="tearDown" finished-at="2026-01-04T21:02:45 EET" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyUsername status=SUCCESS method=LoginTest.testEmptyUsername()[pri:2, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:57 EET" name="setUp" finished-at="2026-01-04T20:48:59 EET" duration-ms="1341" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:45 EET" name="setUp" finished-at="2026-01-04T21:02:46 EET" duration-ms="1374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCartPage()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:59 EET" name="setUpCartPage" finished-at="2026-01-04T20:48:59 EET" duration-ms="302" status="PASS">
+        <test-method signature="testEmptyPassword()[pri:3, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:46 EET" name="testEmptyPassword" finished-at="2026-01-04T21:02:47 EET" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpCartPage -->
-        <test-method signature="testProductsNumberInBadgeMatchesList()[pri:3, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:59 EET" name="testProductsNumberInBadgeMatchesList" finished-at="2026-01-04T20:48:59 EET" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProductsNumberInBadgeMatchesList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:59 EET" name="tearDown" finished-at="2026-01-04T20:48:59 EET" duration-ms="104" status="PASS">
+        </test-method> <!-- testEmptyPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:47 EET" name="tearDown" finished-at="2026-01-04T21:02:47 EET" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyPassword status=SUCCESS method=LoginTest.testEmptyPassword()[pri:3, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:48:59 EET" name="setUp" finished-at="2026-01-04T20:49:01 EET" duration-ms="1343" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:47 EET" name="setUp" finished-at="2026-01-04T21:02:48 EET" duration-ms="1373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCartPage()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:01 EET" name="setUpCartPage" finished-at="2026-01-04T20:49:01 EET" duration-ms="315" status="PASS">
+        <test-method signature="testWrongPassword()[pri:4, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:48 EET" name="testWrongPassword" finished-at="2026-01-04T21:02:48 EET" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpCartPage -->
-        <test-method signature="testBackToShoppingButton()[pri:4, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:01 EET" name="testBackToShoppingButton" finished-at="2026-01-04T20:49:01 EET" duration-ms="81" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBackToShoppingButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:01 EET" name="tearDown" finished-at="2026-01-04T20:49:01 EET" duration-ms="119" status="PASS">
+        </test-method> <!-- testWrongPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:48 EET" name="tearDown" finished-at="2026-01-04T21:02:49 EET" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWrongPassword status=SUCCESS method=LoginTest.testWrongPassword()[pri:4, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:01 EET" name="setUp" finished-at="2026-01-04T20:49:03 EET" duration-ms="1350" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:49 EET" name="setUp" finished-at="2026-01-04T21:02:50 EET" duration-ms="1334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCartPage()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:03 EET" name="setUpCartPage" finished-at="2026-01-04T20:49:03 EET" duration-ms="339" status="PASS">
+        <test-method signature="testLockedOutUser()[pri:5, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:50 EET" name="testLockedOutUser" finished-at="2026-01-04T21:02:50 EET" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpCartPage -->
-        <test-method signature="testRemoveProductFromCart()[pri:5, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:03 EET" name="testRemoveProductFromCart" finished-at="2026-01-04T20:49:05 EET" duration-ms="2248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@3590fc5b]" started-at="2026-01-04T20:49:05 EET" name="tearDown" finished-at="2026-01-04T20:49:05 EET" duration-ms="185" status="PASS">
+        </test-method> <!-- testLockedOutUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:50 EET" name="tearDown" finished-at="2026-01-04T21:02:50 EET" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLockedOutUser status=SUCCESS method=LoginTest.testLockedOutUser()[pri:5, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.CartTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:50 EET" name="setUp" finished-at="2026-01-04T21:02:52 EET" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testIntentionalFailure_WrongAssertion()[pri:6, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:52 EET" name="testIntentionalFailure_WrongAssertion" finished-at="2026-01-04T21:02:52 EET" duration-ms="225" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This test is designed to fail for screenshot demo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This test is designed to fail for screenshot demo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.LoginTest.testIntentionalFailure_WrongAssertion(LoginTest.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIntentionalFailure_WrongAssertion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:52 EET" name="tearDown" finished-at="2026-01-04T21:02:52 EET" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testIntentionalFailure_WrongAssertion status=FAILURE method=LoginTest.testIntentionalFailure_WrongAssertion()[pri:6, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:52 EET" name="setUp" finished-at="2026-01-04T21:02:54 EET" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testIntentionalFailure_WrongExpectedValue()[pri:7, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:54 EET" name="testIntentionalFailure_WrongExpectedValue" finished-at="2026-01-04T21:02:54 EET" duration-ms="294" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This test is designed to fail for screenshot demo expected [Wrong Product Name] but found [Sauce Labs Backpack]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This test is designed to fail for screenshot demo expected [Wrong Product Name] but found [Sauce Labs Backpack]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at tests.LoginTest.testIntentionalFailure_WrongExpectedValue(LoginTest.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIntentionalFailure_WrongExpectedValue -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@639c2c1d]" started-at="2026-01-04T21:02:54 EET" name="tearDown" finished-at="2026-01-04T21:02:54 EET" duration-ms="216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testIntentionalFailure_WrongExpectedValue status=FAILURE method=LoginTest.testIntentionalFailure_WrongExpectedValue()[pri:7, instance:tests.LoginTest@639c2c1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
