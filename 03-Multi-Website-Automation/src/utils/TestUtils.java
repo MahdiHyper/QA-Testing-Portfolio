@@ -25,12 +25,15 @@ public class TestUtils {
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0,arguments[0])", valueWhereToStop);
-		Thread.sleep(3000);
+		
+		Thread.sleep(500);
+		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File myScreenshots = ts.getScreenshotAs(OutputType.FILE);
 		String fileName = timeStamp.toString().replace(":", "-") + "_" + screenShotOrder;
 		
-		FileUtils.copyFile(myScreenshots, new File("screenshots/" + fileName + ".jpg"));
+		FileUtils.copyFile(myScreenshots, new File("screenshots/TestingScreenshots/" + fileName + ".jpg"));
+		
 	}
 
 	public void takeScreenshot(String testName) throws IOException {
@@ -39,8 +42,12 @@ public class TestUtils {
 		File myScreenshots = ts.getScreenshotAs(OutputType.FILE);
 		
 		String fileName = timeStamp.toString().replace(":", "-") + "_" + testName;
-		FileUtils.copyFile(myScreenshots, new File("screenshots/" + fileName + ".jpg"));
+		FileUtils.copyFile(myScreenshots, new File("screenshots/FailureScreenshots/" + fileName + ".jpg"));
+		
 	}
+	
+	
+	
 }
 
 

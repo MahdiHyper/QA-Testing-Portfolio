@@ -6,7 +6,19 @@
       <class name="practicesoftware.PracticeSoftwareTests">
         <methods>
           <include name="takeScreenshotWhenFail"/>
-          <include name="modifyingCartQuantityTest"/>
+          <include name="viewingCheckout"/>
+          <include name="userLoginTest"/>
+          <include name="TearDown"/>
+          <include name="viewingAccountInformationTest"/>
+          <include name="addingProductToCartTest"/>
+          <include name="userRegistrationTest"/>
+          <include name="removingItemFromCartTest"/>
+          <include name="filteringSearchResultsTest"/>
+          <include name="productSearchTest"/>
+          <include name="viewingProductDetailsTest"/>
+          <include name="proceedToCheckoutTest"/>
+          <include name="completePurchaseSubmissionTest"/>
+          <include name="loggingOutTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- practicesoftware.PracticeSoftwareTests -->

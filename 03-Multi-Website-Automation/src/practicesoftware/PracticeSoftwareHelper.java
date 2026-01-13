@@ -20,7 +20,6 @@ public class PracticeSoftwareHelper {
 
 	Random rand = new Random();
 
-	// Data
 	String firstName;
 	String lastName;
 	String email;
@@ -60,33 +59,5 @@ public class PracticeSoftwareHelper {
 
 	}
 
-	public void tearDown() {
-		
-		driver.quit();
-
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public String getCity() {
-		return city;
-	}
+	
 }

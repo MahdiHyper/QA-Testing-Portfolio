@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -33,6 +34,14 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
             String testName = result.getName();
             utils.takeScreenshot(testName);
         }
+		
+	}
+	
+	@AfterClass
+	public void TearDown() {
+		
+		driver.quit();
+		
 	}
 
 	@Test(priority = 1)
@@ -66,20 +75,20 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		WebElement emailField = driver.findElement(By.id("email"));
 		WebElement passwordField = driver.findElement(By.id("password"));
 
-		firstNameField.sendKeys(getFirstName());
-		lastNameField.sendKeys(getLastName());
+		firstNameField.sendKeys(firstName);
+		lastNameField.sendKeys(lastName);
 		dobField.sendKeys("1990-01-01");
-		addressField.sendKeys(getAddress());
+		addressField.sendKeys(address);
 		postcodeField.sendKeys("12345");
-		cityField.sendKeys(getCity());
+		cityField.sendKeys(city);
 		stateField.sendKeys("State");
 
 		Select countrySelect = new Select(countryDropdown);
 		countrySelect.selectByIndex(1);
 
 		phoneField.sendKeys("962770000000");
-		emailField.sendKeys(getEmail());
-		passwordField.sendKeys(getPassword());
+		emailField.sendKeys(email);
+		passwordField.sendKeys(password);
 
 		WebElement registerButton = driver.findElement(By.cssSelector("button[data-test='register-submit']"));
 		registerButton.click();
@@ -100,12 +109,12 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		WebElement emailField = driver.findElement(By.id("email"));
 		WebElement passwordField = driver.findElement(By.id("password"));
 
-		emailField.sendKeys(getEmail());
-		passwordField.sendKeys(getPassword());
+		emailField.sendKeys(email);
+		passwordField.sendKeys(password);
 
 		WebElement loginButton = driver.findElement(By.cssSelector("input[data-test='login-submit']"));
 		loginButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		Assert.assertTrue(driver.getPageSource().contains("My account") 
 				|| driver.getCurrentUrl().contains("account"),
@@ -123,9 +132,9 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 
 		WebElement searchButton = driver.findElement(By.cssSelector("button[data-test='search-submit']"));
 		searchButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
-		utils.scrollPageAndScreenShot(400, "search_results");
+		utils.scrollPageAndScreenShot(200, "search_results");
 
 		Assert.assertTrue(driver.getPageSource().contains("Hammer") 
 				|| driver.getPageSource().contains("hammer"),
@@ -139,9 +148,9 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		WebElement sortDropdown = driver.findElement(By.cssSelector("select[data-test='sort']"));
 		Select selectedSort = new Select(sortDropdown);
 		selectedSort.selectByIndex(1);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
-		utils.scrollPageAndScreenShot(500, "filtered_results");
+		utils.scrollPageAndScreenShot(100, "filtered_results");
 		
 	}
 
@@ -150,9 +159,9 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		
 		WebElement firstProduct = driver.findElement(By.cssSelector("h5[data-test='product-name']"));
 		firstProduct.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
-		utils.scrollPageAndScreenShot(600, "product_details");
+		utils.scrollPageAndScreenShot(100, "product_details");
 
 		Assert.assertTrue(driver.getPageSource().contains("Add to cart"), "Product details should display");
 		
@@ -165,7 +174,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		addToCartButton.click();
 		Thread.sleep(2000);
 
-		Assert.assertTrue(driver.getPageSource().contains("Product added"), "Product should be added to cart");
+		Assert.assertTrue(driver.findElement(By.id("lblCartCount")).isDisplayed(), "Product should be added to cart");
 		
 	}
 
@@ -176,7 +185,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		cartIcon.click();
 		Thread.sleep(2000);
 
-		utils.scrollPageAndScreenShot(400, "checkout_view");
+		utils.scrollPageAndScreenShot(100, "checkout_view");
 
 		Assert.assertTrue(driver.getCurrentUrl().contains("checkout"), "checkout page should display");
 		
@@ -186,13 +195,11 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 	@Test(priority = 9)
 	public void removingItemFromCartTest() throws InterruptedException {
 		
-		WebElement removeButton = driver.findElement(By.cssSelector(".btn.btn-danger"));
+		WebElement removeButton = driver.findElement(By.cssSelector("a.btn.btn-danger"));
 		removeButton.click();
 		Thread.sleep(2000);
 
-		Assert.assertTrue(driver.findElement(By.className("ng-star-inserted")).getText().contains("empty") 
-				|| driver.getPageSource().contains("0 items"),
-				"Cart should be empty");
+		Assert.assertTrue(driver.getPageSource().contains("The cart is empty"), "Cart should be empty");
 		
 	}
 
@@ -200,7 +207,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 	public void proceedToCheckoutTest() throws InterruptedException, IOException {
 		
 		driver.get(websiteURL);
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		WebElement firstProduct = driver.findElement(By.cssSelector("h5[data-test='product-name']"));
 		firstProduct.click();
@@ -222,7 +229,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		checkoutButton2.click();
 		Thread.sleep(1000);
 
-		utils.scrollPageAndScreenShot(300, "checkout_page");
+		utils.scrollPageAndScreenShot(0, "checkout_page");
 
 		Assert.assertTrue(driver.getCurrentUrl().contains("checkout"), "Checkout page should display");
 		
@@ -233,7 +240,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 
 		WebElement sendButton = driver.findElement(By.cssSelector("button[data-test='proceed-3']"));
 		sendButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Select selectPaymentMethod = new Select(driver.findElement(By.id("payment-method")));
 		selectPaymentMethod.selectByValue("cash-on-delivery");
@@ -255,14 +262,14 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		
 		WebElement myAccountLink = driver.findElement(By.linkText("My account"));
 		myAccountLink.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		WebElement profileButton = driver.findElement(By.cssSelector("a[data-test='nav-profile']"));
 		profileButton.click();
 		Thread.sleep(1000);
 
 
-		utils.scrollPageAndScreenShot(400, "account_info");
+		utils.scrollPageAndScreenShot(100, "account_info");
 
 		Assert.assertTrue(driver.getCurrentUrl().contains("profile"), "Account page should display");
 		
@@ -278,7 +285,7 @@ public class PracticeSoftwareTests extends PracticeSoftwareHelper {
 		
 		WebElement signOutLink = driver.findElement(By.linkText("Sign out"));
 		signOutLink.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		Assert.assertTrue(driver.getPageSource().contains("Sign in"), "User should be logged out");
 	}
