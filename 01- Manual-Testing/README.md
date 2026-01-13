@@ -2,7 +2,8 @@ Manual Testing - Sauce Demo E-Commerce
 📋 Project Overview
 Manual testing performed on Sauce Demo e-commerce website to validate core functionalities including login, product browsing, cart management, and checkout process.
 Website: https://www.saucedemo.com
-🎯 Test Scope
+
+**Test Scope**
 
 Login and Logout
 Products Display and Navigation
@@ -10,13 +11,13 @@ Shopping Cart Operations
 Checkout Flow
 Menu Navigation
 
-🖥️ Test Environment
+**Test Environment**
 
 Browser: Chrome (Latest Version)
 OS: Windows 10
 Testing Type: Manual Functional Testing
 
-📊 Test Results
+**Test Results**
 Summary
 
 Total Test Cases: 23
@@ -25,7 +26,8 @@ Failed: 3 (13%)
 
 Results by Module
 ModuleTotalPassedFailedLogin660Products862Cart330Checkout321Overview220Menu110
-🐞 Bugs Found
+
+**Bugs Found**
 BUG_001 - Product Images Issue
 
 Priority: High | Severity: Medium
@@ -44,13 +46,14 @@ Priority: High | Severity: High
 Problem: Lastname field data moves to Firstname field with error_user
 Impact: Cannot complete checkout properly
 
-📁 Test Documents
+**Test Documents**
 Test_Cases.xlsx
 Contains 23 test cases with detailed steps, test data, expected and actual results.
 Bug_Reports.xlsx
 Contains 3 bug reports with reproduction steps and screenshots.
 Screenshots/
 Visual proof of bugs found during testing.
+
 ✅ What Was Tested
 Positive Testing:
 
@@ -74,14 +77,8 @@ problem_user
 error_user
 locked_out_user
 
-💡 Recommendations
 
-Fix the 3 high-priority bugs before release
-All bugs affect specific users (problem_user and error_user)
-Core functionality works well for standard users
-Retest after bugs are fixed
-
-🎯 Conclusion
+**Conclusion**
 Testing completed successfully. The website works well for most users with 87% test pass rate. Found 3 critical bugs that need fixing. All bugs are documented with clear steps to reproduce.
 
 Tester: Mahdi Alboon
